@@ -19,7 +19,7 @@
             die();
         }
 
-        $zapytanie = exec("UPDATE studenci SET nazwisko = 'Malinowski' WHERE id = 3");
+        $polacz -> exec("UPDATE studenci SET nazwisko = 'Malinowski' WHERE id = 3");
      
     ?>
 

@@ -19,12 +19,12 @@
             die();
         }
 
-        $zapytanie1 = exec("INSERT INTO studenci (imie, nazwisko, email, id_rok_studiow)
+        $polacz -> exec("INSERT INTO studenci (imie, nazwisko, email, id_rok_studiow)
         VALUES('Patryk', 'Klimala', 'jestemspokojnyogole@gmail.com', 1),
         ('Bartosz', 'Kwiecień', 'kwiecienplecien@gmail.com', 1),
         ('Jakub', 'Wójcicki', 'prostenogi@gmail.com', 2)");
 
-        $zapytanie2 = exec("INSERT INTO rok (nazwa, kierunek, stopien) 
+        $polacz -> exec("INSERT INTO rok (nazwa, kierunek, stopien) 
         VALUES(1, 'Informatyka', 1), (2, 'Fizyka', 2)");
     
     ?>
